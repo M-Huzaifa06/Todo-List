@@ -84,7 +84,7 @@ function App() {
           />
           <button
             onClick={handleAdd}
-            className="px-6 py-3 bg-white text-purple-600 font-semibold rounded-2xl hover:scale-105 hover:bg-purple-100 transition duration-200 shadow-md"
+            className="cursor-pointer px-6 py-3 bg-white text-purple-600 font-semibold rounded-2xl hover:scale-105 hover:bg-purple-100 transition duration-200 shadow-md"
           >
             Add
           </button>
@@ -99,7 +99,7 @@ function App() {
                 type="checkbox"
                 checked={showFinished}
                 onChange={() => setshowFinished(!showFinished)}
-                className="w-4 h-4 accent-purple-600"
+                className="w-4 h-4 accent-purple-600 cursor-pointer"
               />
               Show Completed
             </label>
@@ -135,14 +135,14 @@ function App() {
                   <div className="flex gap-4 opacity-70 group-hover:opacity-100 transition">
                     <button
                       onClick={() => handleEdit(item.id)}
-                      className="text-white hover:text-yellow-300 transition"
+                      className="text-white hover:text-yellow-300 transition cursor-pointer"
                     >
                       <SquarePen size={20} />
                     </button>
 
                     <button
                       onClick={() => handleRemove(item.id)}
-                      className="text-white hover:text-red-400 transition"
+                      className="text-white hover:text-red-400 transition cursor-pointer"
                     >
                       <Trash size={20} />
                     </button>
